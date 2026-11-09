@@ -7,8 +7,9 @@
 <meta name="screen-orientation" content="landscape">
 <title>Spear Hunter: Ice Age</title>
 <link rel="icon" href="favicon.svg">
-  <script type="module" crossorigin src="./assets/index-DGVa0zk5.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Gnqyv7fP.css">
+<script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+  <script type="module" crossorigin src="./assets/index-CYxgwDMB.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B31dWIrh.css">
 </head>
 <body>
 <div id="game"></div>
@@ -44,6 +45,7 @@
       <button id="btnCh">🎯 Challenges</button>
     </div>
     <div id="menuTease"></div>
+    <div id="pcKeys">🖱 PC: <b>WASD</b> move · <b>Mouse</b> look · hold <b>Left click</b> aim, release to throw · <b>Right click/F</b> knife · <b>Space</b> roll · <b>E</b> item · <b>Q</b> switch item · <b>Shift</b> sneak · <b>Esc</b> pause</div>
     <div class="row small"><button id="btnSound">🔊 Sound on</button><button id="btnFull">⛶ Fullscreen</button></div>
   </div>
 </div>
@@ -59,9 +61,10 @@
   <div class="shophead"><h2>🏕 Tribe Camp</h2><div id="campMats"></div></div>
   <div class="tabs"><button class="ctab" data-t="build">Build</button><button class="ctab" data-t="craft">Craft</button><button class="ctab" data-t="trade">Trade</button><button class="ctab" data-t="dog">Dog</button></div>
   <div id="campList"></div><button class="back">◀ Back</button></div></div>
-<div class="screen" id="win"><div class="panel"><h2 id="winTitle">Level complete!</h2><p id="winInfo"></p><div class="row"><button id="btnNext" class="big">Next hunt ▶</button><button id="btnWinCh">🎯 Challenges</button><button id="btnWinMenu">Menu</button></div></div></div>
+<div class="screen" id="win"><div class="panel"><h2 id="winTitle">Level complete!</h2><p id="winInfo"></p><div class="row"><button id="btnNext" class="big">Next hunt ▶</button><button id="btnDouble" class="reward" style="display:none">📺 Double bones</button><button id="btnWinCh">🎯 Challenges</button><button id="btnWinMenu">Menu</button></div></div></div>
 <div class="screen" id="lose"><div class="panel"><h2 id="loseTitle">You were hunted!</h2><p id="loseInfo"></p><div class="row"><button id="btnRetry" class="big">↻ Try again</button><button id="btnLoseMenu">Menu</button></div></div></div>
 <div class="screen" id="pause"><div class="panel"><h2>Paused</h2><div class="row"><button id="btnResume" class="big">▶ Resume</button><button id="btnRestart">↻ Restart</button><button id="btnQuit">Menu</button></div></div></div>
+<div id="adblock"><div>⏳</div></div>
 <div id="rotate"><div>📱↻<br>Rotate your phone to landscape</div></div>
 <div id="loading"><h1>Spear Hunter<em>ICE AGE</em></h1><div class="lb"><div id="loadbar"></div></div></div>
 </body>
