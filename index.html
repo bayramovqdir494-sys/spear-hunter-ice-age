@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#2f7fe0">
+<meta name="screen-orientation" content="landscape">
+<title>Spear Hunter: Ice Age</title>
+<link rel="icon" href="favicon.svg">
+  <script type="module" crossorigin src="./assets/index-DS9UYfrJ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bc9ivKtV.css">
+</head>
+<body>
+<div id="game"></div>
+<div id="hud">
+  <div id="tl"><div id="hpbar"><div id="hpfill"></div></div><div id="spears"></div></div>
+  <div id="tc"><div id="goals"></div><div id="tracker"><i>▲</i><span></span></div></div>
+  <div id="tr"><span id="bones">🦴 0</span><button id="pauseBtn" aria-label="Pause">❚❚</button></div>
+  <div id="cross"></div><div id="sneak">🤫 sneaking</div>
+  <div id="intro"></div>
+</div>
+<div id="touch">
+  <div id="joy"><div id="knob"></div></div>
+  <button class="btn" id="btnDodge">ROLL</button>
+  <button class="btn" id="btnThrow"><span>THROW</span><small>hold · drag to aim</small><div id="chargewrap"><div id="chargebar"></div></div></button>
+</div>
+<div id="floats"></div>
+<div id="hurt"></div>
+<div id="toast"></div>
+<div id="burst">🦴🦴🦴</div>
+
+<div class="screen" id="menu">
+  <div class="panel title">
+    <h1>Spear Hunter<em>ICE AGE</em></h1>
+    <div class="row"><span id="menuBones" class="pill">🦴 0</span></div>
+    <button id="btnPlay" class="big">▶ Start Hunt</button>
+    <div class="grid">
+      <button id="btnLevels">🗺 Levels</button>
+      <button id="btnShop">🛖 Shop</button>
+      <button id="btnDaily">🎁 Daily <span class="badge"></span></button>
+      <button id="btnCh">🎯 Challenges</button>
+    </div>
+    <div id="menuTease"></div>
+    <div class="row small"><button id="btnSound">🔊 Sound on</button><button id="btnFull">⛶ Fullscreen</button></div>
+  </div>
+</div>
+<div class="screen" id="levels"><div class="panel wide"><h2>Choose a hunt</h2><div id="levelList"></div><button class="back">◀ Back</button></div></div>
+<div class="screen" id="daily"><div class="panel wide"><h2>🎁 Daily Gift</h2><div id="calendar"></div><p id="dailyMsg"></p><div class="row"><button id="btnClaim" class="big">Claim gift</button><button class="back">Continue ▶</button></div></div></div>
+<div class="screen" id="challenges"><div class="panel wide"><h2>🎯 Daily Challenges</h2><div id="chList"></div><p id="chTimer" class="small"></p><button class="back">◀ Back</button></div></div>
+<div class="screen" id="shop"><div class="panel wide shop">
+  <div class="shophead"><h2>🛖 Hunter's Hut</h2><span id="shopBones" class="pill">🦴 0</span></div>
+  <div class="tabs"><button class="tab" data-t="spear">Spears</button><button class="tab" data-t="outfit">Fur outfits</button><button class="tab" data-t="paint">Face paint</button></div>
+  <div class="shopbody"><div id="shopList"></div><canvas id="shopPreview"></canvas></div>
+  <button class="back">◀ Back</button></div></div>
+<div class="screen" id="win"><div class="panel"><h2 id="winTitle">Level complete!</h2><p id="winInfo"></p><div class="row"><button id="btnNext" class="big">Next hunt ▶</button><button id="btnWinCh">🎯 Challenges</button><button id="btnWinMenu">Menu</button></div></div></div>
+<div class="screen" id="lose"><div class="panel"><h2>You were hunted!</h2><p id="loseInfo"></p><div class="row"><button id="btnRetry" class="big">↻ Try again</button><button id="btnLoseMenu">Menu</button></div></div></div>
+<div class="screen" id="pause"><div class="panel"><h2>Paused</h2><div class="row"><button id="btnResume" class="big">▶ Resume</button><button id="btnRestart">↻ Restart</button><button id="btnQuit">Menu</button></div></div></div>
+<div id="rotate"><div>📱↻<br>Rotate your phone to landscape</div></div>
+<div id="loading"><h1>Spear Hunter<em>ICE AGE</em></h1><div class="lb"><div id="loadbar"></div></div></div>
+</body>
+</html>
